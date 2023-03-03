@@ -92,6 +92,7 @@ router.post('/createTransaction', function (req, res, next) {
   //     `${API_KEY}&${command}&${API_VERSION}&${params.amount}&${params.currency1}&${params.currency2}&${params.buyer_email}`
   //   )
   //   .digest('hex');
+	//
 
   const dataString = Object.keys(params)
     .map(k => `${k}=${encodeURIComponent(params[k])}`)
