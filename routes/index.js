@@ -290,7 +290,7 @@ router.get('/updateCoinData', checkAuthorization, (req, res) => {
   var config = {
     method: 'get',
     maxBodyLength: Infinity,
-    url: 'https://pinkvote-436c5-default-rtdb.firebaseio.com/coins.json?orderBy="ownerId"&equalTo="sKsvOQnlk1WYfTuiYgdppT0nusH3"',
+    url: 'https://pinkvote-436c5-default-rtdb.firebaseio.com/coins.json?orderBy="owner"&equalTo="admin"',
     headers: { }
   };
 
